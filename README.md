@@ -10,6 +10,78 @@ Stages Explained :
 
 
 
+Stage One : Versioning my Application
+
+WHY ?
+Scenario : Development team developed a new feature or a bug fix and those must be available to the end user and must release a new version of our application.
+
+This Process must be Automated and keep tracked
+
+- Each Build Tool/Package manager holds the version of the app itself in a file ( in my case   java maven for my app ) its called pom.xml
+
+
+
+- We start by using a Maven Plugin command to read and increment the version numbers as we want 
+- Read our pom.xml file and and abstract the new version number and save it in a variable called version 
+
+- Finally we create  an environment variable  called env.IMAGE_NAME
+And set it to the version-BULID_NUMBER
+
+env.IMAGE_NAME  and   version-BUILD_NUMBER 
+Will be explained in later stages 
+
+![](Images/stage1.png)
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Stage Two : Build App WIth Maven
+
+ - Maven Building Tool is Configured in jenkins through Global Tool Configuration  
+ - we run ‘maven clean package’  To clear any created jar files and start building the app with the new version number set 
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Stage Three : Build Image 
+
+
+- Building a docker Image of our created jar file app and log in and push our created image to dockerhub container repistery 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Stage Four : Deploy App
+
+
+An Already AWS-EC2 Deployment-Server is created to host and run the  App 
+
+We access the the deployment server through SSH from jenkins and copy our docker-compose.yaml & server-cmds.sh  files from jenkins server to App host server (  AWS-EC2 Deployment-Server )
+
+Run server-cmds.sh and it triggers docker-compose file that ( Pulls Docker App image and run it as a container )
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Stage Five :  Commit Version Update 
+
+
+
+Logged in to github and dynamically update the version in pom.xml file in working branch
+
+
+
+
 
 
 
