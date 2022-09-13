@@ -35,10 +35,17 @@ Will be explained in later stages
 
 ---------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
 Stage Two : Build App WIth Maven
 
  - Maven Building Tool is Configured in jenkins through Global Tool Configuration  
  - we run ‘maven clean package’  To clear any created jar files and start building the app with the new version number set 
+
+![](Images/stage2.png)
+
 
 
 
@@ -50,6 +57,10 @@ Stage Three : Build Image
 
 
 - Building a docker Image of our created jar file app and log in and push our created image to dockerhub container repistery 
+
+![](Images/stage3.png)
+
+
 
 
 
@@ -65,10 +76,16 @@ We access the the deployment server through SSH from jenkins and copy our docker
 
 Run server-cmds.sh and it triggers docker-compose file that ( Pulls Docker App image and run it as a container )
 
+![](Images/stage4.png)
+
+
 
 
 
 ---------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
@@ -81,7 +98,7 @@ Logged in to github and dynamically update the version in pom.xml file in workin
 
 
 
-
+![](Images/stage5.png)
 
 
 
