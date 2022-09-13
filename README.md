@@ -7,6 +7,18 @@ A Scripted **Multi-branch pipeline** that is triggered automatically on code cha
 
 
 
+Steps Of Project :
+
+Step One
+
+- Configure and Start an AWS EC2 for Jenkins ( Managing Instance Security Rules and open port 22 for SSH Conn and 8080 for Jenkins).
+- Access EC2 Instance through SSH using CLI.
+- Install Docker on Jenkins-Server.
+- Start Jenkins as a Docker Container.
+- Make Docker Available in jenkins container by mounting docker runtime dir from ec2-instance into jenkins docker container as a volume.
+
+
+
 
 Built With 
 
