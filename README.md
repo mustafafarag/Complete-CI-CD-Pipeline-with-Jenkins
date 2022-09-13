@@ -10,7 +10,7 @@ Stages Explained :
 
 
 
-Stage One : Versioning my Application
+_Stage One : Versioning my Application_
 
 WHY ?
 Scenario : Development team developed a new feature or a bug fix and those must be available to the end user and must release a new version of our application.
@@ -39,7 +39,7 @@ Will be explained in later stages
 
 
 
-Stage Two : Build App WIth Maven
+_Stage Two : Build App WIth Maven_
 
  - Maven Building Tool is Configured in jenkins through Global Tool Configuration  
  - we run ‘maven clean package’  To clear any created jar files and start building the app with the new version number set 
@@ -53,7 +53,7 @@ Stage Two : Build App WIth Maven
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Stage Three : Build Image 
+_Stage Three : Build Image _
 
 
 - Building a docker Image of our created jar file app and log in and push our created image to dockerhub container repistery 
@@ -67,7 +67,7 @@ Stage Three : Build Image
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Stage Four : Deploy App
+_Stage Four : Deploy App_
 
 
 An Already AWS-EC2 Deployment-Server is created to host and run the  App 
@@ -90,7 +90,7 @@ Run server-cmds.sh and it triggers docker-compose file that ( Pulls Docker App i
 
 
 
-Stage Five :  Commit Version Update 
+_Stage Five :  Commit Version Update_ 
 
 
 
