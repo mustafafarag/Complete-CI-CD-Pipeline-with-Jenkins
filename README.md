@@ -6,7 +6,7 @@ A Scripted **Multi-branch pipeline** that is triggered automatically on code cha
 ![](Images/CI-CD-Pipeline.png)
 
 
-Stages Explained : 
+## Stages Explained : 
 
 
 
