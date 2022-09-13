@@ -6,6 +6,9 @@ A Scripted **Multi-branch pipeline** that is triggered automatically on code cha
 ![](Images/CI-CD-Pipeline.png)
 
 
+
+
+
 ## Stages Explained : 
 
 
@@ -33,6 +36,8 @@ Will be explained in later stages
 ![](Images/stage1.png)
 
 
+
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 
@@ -45,6 +50,8 @@ Will be explained in later stages
  - we run ‘maven clean package’  To clear any created jar files and start building the app with the new version number set 
 
 ![](Images/stage2.png)
+
+
 
 
 
@@ -64,6 +71,8 @@ Will be explained in later stages
 
 
 
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -77,6 +86,7 @@ Will be explained in later stages
 - Run server-cmds.sh and it triggers docker-compose file that ( Pulls Docker App image and run it as a container )
 
 ![](Images/stage4.png)
+
 
 
 
@@ -104,6 +114,8 @@ Will be explained in later stages
 
 
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
