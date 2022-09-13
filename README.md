@@ -70,11 +70,11 @@ Will be explained in later stages
 **Stage Four : Deploy App**
 
 
-An Already AWS-EC2 Deployment-Server is created to host and run the  App 
+- An Already AWS-EC2 Deployment-Server is created to host and run the  App 
 
-We access the the deployment server through SSH from jenkins and copy our docker-compose.yaml & server-cmds.sh  files from jenkins server to App host server (  AWS-EC2 Deployment-Server )
+- We access the the deployment server through SSH from jenkins and copy our docker-compose.yaml & server-cmds.sh  files from jenkins server to App host server (  AWS-EC2 Deployment-Server )
 
-Run server-cmds.sh and it triggers docker-compose file that ( Pulls Docker App image and run it as a container )
+- Run server-cmds.sh and it triggers docker-compose file that ( Pulls Docker App image and run it as a container )
 
 ![](Images/stage4.png)
 
@@ -94,7 +94,7 @@ Run server-cmds.sh and it triggers docker-compose file that ( Pulls Docker App i
 
 
 
-Logged in to github and dynamically update the version in pom.xml file in working branch
+- Logged in to github and dynamically update the version in pom.xml file in working branch
 
 
 
