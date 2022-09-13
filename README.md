@@ -10,9 +10,9 @@ A Scripted **Multi-branch pipeline** that is triggered automatically on code cha
 
 Built With 
 
-- [Amazon AWS EC2-Instance](https://aws.amazon.com/)
-- [Jenkins](https://www.jenkins.io/)
-- [Docker & docker-compose](https://www.docker.com/)
-- [DockerHub](https://hub.docker.com/)
-- [GitHub WebHooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks)
-- [Maven](https://maven.apache.org/)
+- [Amazon AWS EC2-Instance](https://aws.amazon.com/) Cloud services
+- [Jenkins](https://www.jenkins.io/) (CI/CD) automation software
+- [Docker & docker-compose](https://www.docker.com/) Containerization Tool
+- [DockerHub](https://hub.docker.com/) Container Registry
+- [GitHub WebHooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks) User-defined HTTP callbacks
+- [Maven](https://maven.apache.org/) Open-source build tool for Java
