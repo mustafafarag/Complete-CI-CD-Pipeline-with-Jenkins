@@ -104,7 +104,7 @@ Will be explained in later stages
 
 
 
--By using GitHub Credentials configured in jenkins, We Logged in to github and dynamically update the version in pom.xml file in working branch
+-By using GitHub Credentials configured in jenkins, We Logged in to github and dynamically update the version in pom.xml file in the working branch
 
 
 
