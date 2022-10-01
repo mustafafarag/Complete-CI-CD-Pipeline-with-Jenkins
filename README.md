@@ -4,15 +4,15 @@
 A Scripted **Multi-branch pipeline** that is triggered Automatically on code changes (Using GitHub WebHooks)
 Consists of 5 Stages :
 
--Automatically Handle the versioning of the app (Increment app version number with each new build).
+1- Automatically Handle the versioning of the app (Increment app version number with each new build).
 
--Building and Testing the App (Using Maven).
+2- Building and Testing the App (Using Maven).
 
--Building a Docker Image of the App and Login & and Push to DockerHub Repository.
+3- Building a Docker Image of the App and Login & and Push to DockerHub Repository.
 
--Deploy App to an AWS-EC2 Instance.
+4- Deploy App to an AWS-EC2 Instance.
 
--Commit Version Update to App GitHub Repository.
+5- Commit Version Update to App GitHub Repository.
 
 
 
