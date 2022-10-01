@@ -1,7 +1,15 @@
 # Complete-CI-CD-Pipeline-with-Jenkins
 
 
-A Scripted **Multi-branch pipeline** that is triggered automatically on code changes (Using GitHub WebHooks),and which test and build the application ( Java Maven App ) into a docker image with automatically incremented version and push that image into configured docker repo 
+A Scripted **Multi-branch pipeline** that is triggered Automatically on code changes (Using GitHub WebHooks)
+Consists of 5 Stages :
+1- Automatically Handle the versioning of the app (Increment app version number with each new build).
+2- Building and Testing the App (Using Maven).
+3- Building a Docker Image of the App and Login & and Push to DockerHub Repository.
+4- Deploy App to an AWS-EC2 Instance.
+5- Commit Version Update to App GitHub Repository.
+
+
 
 ![](Images/CI-CD-Pipeline.png)
 
